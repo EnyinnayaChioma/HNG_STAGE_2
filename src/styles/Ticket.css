@@ -1,0 +1,377 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  user-select: none;
+}
+
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  /* margin:  0 auto; */
+}
+
+/* nav */
+header nav {
+  display: flex;
+  width: 1200px;
+  padding: 10px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #197686;
+  background: #05252c66;
+  backdrop-filter: blur(2px);
+}
+
+
+/* first image which is the logo */
+header nav>div>img{
+  width: 24px;
+height: 24px;
+aspect-ratio: 1/1;
+margin-right: .5rem;
+cursor: pointer;
+
+}
+
+/* second image which is logo text */
+header .logotext{
+  width: 43.793px;
+height: 22.624px;
+fill: #0E464F;
+stroke-width: 1px;
+stroke: #fff;
+cursor: pointer;
+
+}
+
+/* nav liist */
+.list ul{
+  display: flex;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+list-style: none;
+}
+
+/* each list */
+.list ul li{
+  color: #B3B3B3;
+font-family: JejuMyeongjo;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: .3rem;
+cursor: pointer;
+}
+
+.navButton{
+  display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+border: 1px solid rgba(213, 234, 0, 0.10);
+background: #FFF;
+}
+/* .container{
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 48px;
+align-self: stretch;
+} */
+
+main{
+  /* display: flex; */
+width: 700px;
+padding: 15px 40px;
+margin: 0 50rem;
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+/* gap: 32px; */
+border-radius: 40px;
+border: 1px solid #0E464F;
+background: #041E23;
+}
+
+.ticketTitle{
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .8rem;
+  /* height: 40px; */
+  /* background-color: red; */
+  text-align: center;
+}
+
+.ticketTitle h3{
+  color: #FFF;
+/* font-family: JejuMyeongjo; */
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+/* line-height: normal; */
+}
+
+.ticketTitle p{
+  text-align: center;
+  color:  #FAFAFA;
+
+/* Text/Regular/Normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+/* line-height: 150%;  */
+}
+
+
+.bar{
+  margin: 2rem 0;
+}
+
+.progressBar{
+
+  margin-bottom: 2rem;
+}
+
+.bar>div,  .progressBar>div{
+  height: 4px;
+align-self: stretch;
+background: #07373F;
+}
+
+/*  */
+.ticketHolder{
+  display: flex ;
+  justify-content: center;
+}
+
+.bookedtitle h1{
+   align-self: stretch;
+   color: #FFF;
+text-align: center;
+font-family: Alatsi;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.bookedtitle p{
+  color: var(--color-grey-98, #FAFAFA);
+text-align: center;
+align-self: stretch;
+/* Text/Regular/Normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+color: var(--color-grey-98, #FAFAFA);
+
+/* Text/Regular/Normal */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+.bgImage img{
+  position: relative;
+}
+
+
+/* div holding the each ticket */
+.eachTiket{
+  display: flex;
+padding: 32px 21px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 24px;
+}
+
+/* ticket tile */
+.ticketTtle {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+  flex-shrink: 0;
+}
+
+
+.ticketTtle>div>h2{
+  align-self: stretch;
+  color: #FFF;
+  text-align: center;
+  font-family: "Road Rage";
+  font-size:24px;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.locatin{
+  margin-bottom: 1rem;
+}
+
+.ticketTtle p{
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+
+}
+
+
+/* container holding  ticket */
+.ticketDetailContainer{
+  display: flex;
+width: 240px;
+height: 446px;
+padding: 14px;
+align-items: center;
+flex-shrink: 0;
+border-radius: 16px;
+border: 1px solid #24A0B5;
+background: rgba(3, 30, 33, 0.10);
+backdrop-filter: blur(2px);
+position: absolute;
+top: 20.5rem;
+right: 49rem;
+}
+
+/* avaterHolder */
+
+.avaterHolder{
+  width: 140px;
+height: 140px;
+display: flex;
+margin-left: 3rem;
+border-radius: 12px;
+border: 4px solid #24a0b580;
+background: url('../assets/image/user.jpeg') ;
+background-size: cover;
+margin-top: 1.5rem;
+ background-repeat: no-repeat;
+}
+
+/* div holding details from form */
+.detailsFromForm{
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+border: 1px solid #133D44;
+background: #08343C;
+margin-top: 1.5rem;
+}
+/* div holding name and email details */
+.nameEmailHolder,.ticketTypeHolder{
+  display: flex;
+padding: px;
+flex-direction: row;
+justify-content: space-between ;
+align-items: flex-start;
+gap: 4px;
+/* flex: 1 0 0; */
+}
+.userName{
+  border-right: 1px solid #12464E;
+  padding-right: 1rem;
+}
+
+.type{
+  border-right: 1px solid #12464E;
+  margin: 0;
+}
+
+.userName>p:nth-child(1), .userEmail>p:nth-child(1), .type>p:nth-child(1), .quantity>p:nth-child(1), .specialRequest>p:nth-child(1){
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+opacity: 0.33;
+}
+
+.userName>p:nth-child(2), .userEmail>p:nth-child(2){
+  color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 18px */
+}
+
+.type>p:nth-child(2), .quantity>p:nth-child(2){
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 15px */
+}
+
+.specialRequest>p:nth-child(2){
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+align-self: stretch;
+}
+/*  */
+.buttonHolder{
+  display: flex;
+height: 48px;
+justify-content: center;
+align-items: flex-end;
+gap: 24px;
+align-self: stretch;
+margin: 1.5rem 0;
+}
+
+.buttonHolder button{
+  display: flex;
+padding: var(--Radius-reg-2, 12px) var(--Radius-semi, 24px);
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex: 1 0 0;
+border-radius: var(--Radius-reg, 8px);
+background: #07373F;
+color: #24A0B5;
+
+}
+
+
+.buttonHolder button:hover{
+  background-color: #24A0B5;
+  color: #fff;
+}
+
+
