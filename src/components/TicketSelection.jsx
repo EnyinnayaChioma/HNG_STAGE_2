@@ -2,7 +2,7 @@
 import "../styles/TicketSelection.css";
 import logo from "../assets/logo.svg";
 import logoText from "../assets/logoText.svg";
-
+import { Link } from "react-router";
 
 function TicketSelection() {
   return (
@@ -21,7 +21,7 @@ function TicketSelection() {
               <div className="list">
                 <ul>
                   <li>Events</li>
-                 <li>My Tickets</li>
+                 <Link to ='tickets'> <li>My Tickets</li></Link>
                   <li>About </li>
                   <li>Project</li>
                 </ul>
