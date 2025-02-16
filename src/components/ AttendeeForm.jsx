@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import "../styles/AttendeeForm.css";
 import logo from "../assets/logo.svg";
 import logoText from "../assets/logoText.svg";
@@ -253,6 +253,7 @@ const AttendeeForm = () => {
                     onChange={handleInputChange}
                     placeholder="e.g: cynosureenyinnaya@gmail.com"
                     className={errors.email ? 'error' : ''}
+                    required
                   />
                   {errors.email && (
                     <p className="text-red-500 text-sm mt-1">{errors.email}</p>
