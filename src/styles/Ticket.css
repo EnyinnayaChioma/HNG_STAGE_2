@@ -274,8 +274,8 @@ main {
 .userName > p:nth-child(2),
 .userEmail > p:nth-child(2) {
   color: #FFF;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 9px;
+  font-weight: 500;
 }
 
 .type > p:nth-child(2),
