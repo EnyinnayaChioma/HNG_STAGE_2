@@ -32,6 +32,7 @@ function Ticket() {
     if (!ticketData || !attendeeData) {
         return <div className="loading">Loading ticket...</div>;
     }
+    {localStorage.clear()}
 
     return (
         <div>
@@ -82,7 +83,7 @@ function Ticket() {
                                     <div className="ticketDetailContainer">
                                         <div className="ticketDetails">
                                             <div className="ticketTtle">
-                                                <div>
+                                                <div className="ttle">
                                                     <h2>Techember Fest &quot; 25</h2>
                                                 </div>
                                                 <div className="LocationT">

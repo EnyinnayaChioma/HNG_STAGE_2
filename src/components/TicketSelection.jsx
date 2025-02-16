@@ -1,7 +1,6 @@
 import "../styles/TicketSelection.css";
 import logo from "../assets/logo.svg";
 import logoText from "../assets/logoText.svg";
-import {Link} from "react-router";
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router";
 
@@ -92,9 +91,9 @@ function TicketSelection() {
                             <div className="list">
                                 <ul>
                                     <li>Events</li>
-                                    <Link to='tickets'>
+                                    
                                         <li>My Tickets</li>
-                                    </Link>
+                                
                                     <li>About</li>
                                     <li>Project</li>
                                 </ul>
@@ -123,7 +122,7 @@ function TicketSelection() {
 
                                 <div className="secureSpot">
                                     <p>
-                                        Join us for an unforgettable experience at 📍[Event Name]!
+                                        Join us for an unforgettable experience at <br />📍[Event Name]!
                                         Secure your spot now.
                                     </p>
                                 </div>
@@ -147,7 +146,7 @@ function TicketSelection() {
                                 <div className={`free box ${selectedTicket === 'FREE' ? 'selected' : ''}`}
                                      onClick={() => handleTicketType1("one")}>
                                     <div>
-                                        <h4>$100</h4>
+                                        <h4>FREE</h4>
                                         <p className="type">FREE</p>
                                         <p className="numberz">20/52</p>
                                     </div>

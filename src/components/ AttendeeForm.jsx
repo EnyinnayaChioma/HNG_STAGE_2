@@ -112,7 +112,10 @@ const AttendeeForm = () => {
         }));
       }
     }
+
   };
+
+
 
   /* Cloudinary upload function (commented out for future use)
   const uploadToCloudinary = async (file) => {
