@@ -169,7 +169,7 @@ line-height: 150%;
 }
 .lightbox {
   display: flex;
-  width: 200px;
+  width: 240px;
   height: 160px;
   padding: 24px;
   flex-direction: column;
@@ -194,6 +194,11 @@ line-height: 150%;
   font-weight: 400;
   line-height: 150%;
   align-self: stretch;
+}
+
+.lightbox input{
+  color: #FAFAFA;
+  width: 13rem;
 }
 
 .bar{

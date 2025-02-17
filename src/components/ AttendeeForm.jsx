@@ -2,7 +2,7 @@ import  { useState, useEffect } from 'react';
 import "../styles/AttendeeForm.css";
 import logo from "../assets/logo.svg";
 import logoText from "../assets/logoText.svg";
-import {useNavigate} from "react-router"
+import { useNavigate } from "react-router";
 
 const AttendeeForm = () => {
   const [formData, setFormData] = useState({
@@ -147,26 +147,32 @@ const AttendeeForm = () => {
   */
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    if (validateForm()) {
-      try {
-        // Instead of uploading to Cloudinary, we'll just use the local preview
-        console.log('Form submitted:', { 
-          name: formData.name,
-          email: formData.email,
-          specialRequest: formData.specialRequest,
-          profileImage: preview 
-        });
-        // Handle successful submission
-      } catch (error) {
-        setErrors(prev => ({
-          ...prev,
-          submit: 'Failed to submit form. Please try again.'
-        }));
-      }
+    e.preventDefault(); // Prevent default form submission
+  
+    if (!validateForm()) {
+      return; // Stop if validation fails
     }
-    navigate("/ticket")
+  
+    try {
+      console.log("Form submitted:", {
+        name: formData.name,
+        email: formData.email,
+        specialRequest: formData.specialRequest,
+        profileImage: preview,
+      });
+  
+      // Save valid form data
+      localStorage.setItem("attendeeFormData", JSON.stringify(formData));
+  
+      // Navigate only after successful validation and submission
+      navigate("/ticket");
+  
+    } catch (error) {
+      setErrors((prev) => ({
+        ...prev,
+        submit: "Failed to submit form. Please try again.",
+      }));
+    }
   };
 
   return (
@@ -272,20 +278,22 @@ const AttendeeForm = () => {
                     placeholder="Ask anything"
                   ></textarea>
                 </div>
-              </form>
-            </section>
-            
-            <div className="buttonHolder">
+
+                <div className="buttonHolder">
               <button type="button" onClick={() => window.history.back()}>
                 Cancel
               </button>
               <button 
                 type="submit"
-                onClick={handleSubmit}
+                
               >
                 Next
               </button>
             </div>
+              </form>
+            </section>
+            
+            
           </main>
         </div>
       </div>
