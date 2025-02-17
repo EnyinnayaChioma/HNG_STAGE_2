@@ -18,6 +18,7 @@ function Ticket() {
         }
         if (storedAttendeeData) {
             setAttendeeData(JSON.parse(storedAttendeeData));
+            console.log(attendeeData)
         }
     }, []);
 
